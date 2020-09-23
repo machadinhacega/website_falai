@@ -14,8 +14,9 @@ body{
     background-color: #F3F3F3;
     color: #474a51; 
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 100%;
+    font-weight: 300;
+    line-height: 160%;
     text-rendering: optimizeLegibility;
     /* overflow: hidden; */
     /* Para desabiitar o scrol */
@@ -24,7 +25,7 @@ body{
 
 /* LINHAS */
 /* Todas as linhas utilizam 100% da largura da página. */
-/* O espaçamento interno é variável para ter alinhamentos diferentes para o texto. */
+/* A linha de Navegação recebeu um alinhamento e espaçamento interno diferente das demais */
 .linhaPadrao{
     width: 100%;
     text-align: center;
@@ -35,12 +36,6 @@ body{
     text-align: left;
     padding-left: 3%;
     padding-right: 3%;
-}
-
-.linhaForm{
-    width: 100%;
-    text-align: center;
-    padding: 1% 0% 0 4%
 }
 
 /* COLUNAS */
@@ -115,129 +110,96 @@ section {
 
 /* ~~~~~~~~~~~~~~~~~TEXTOS ~~~~~~~~~~~~~~~~~~ */
 
-
-.primeiraCitacao{
-    margin: 18% 0% 0% 18%; 
+.citacao{
     font-size: 250%;
     font-weight: 800;
     text-align: left;
+    line-height: 120%;
+    float: left;
+}
+
+#citacaoAbertura{
+    margin: 18% 0% 0% 18%; 
 }
 
 
-.primeiroAutor{
-    margin: 2% 0% 0% 19%; 
+#citacaoSteven{
+    margin: 0 0 0 -25%; 
+    padding: 9% 40% 0 0%;
+}
+
+#citacaoAdventure{
+    margin: 0 0 0 -70%; 
+    padding: 10% 98% 0 0%;
+}
+
+
+
+.autor{
     font-size: 80%;
     font-weight: 500;
     text-align: left;
     float: left;
 }
-
-
-.tituloQuem{
-    margin: 22% 0% 0% -10%;
-    font-size: 300%;
-    text-align: left;
-    color: #FFFFFF;
-    background-color: #000000;
+#autorAbertura{
+    margin: 2% 0% 0% 19%; 
+}
+#autorSteven{
+    margin: 0 0 0 -25%; 
+    padding: 0 50% 0 0%;
+}
+#autorAdventure{
+    margin: 0 0 0 -70%; 
+    padding: 2% 131% 0 0%;
 }
 
-.textoQuem{
-    font-weight: 300;
-    font-size: 100%;
-    margin: 0% 0% 34.8% -10%;
-    padding: 6% 20% 0 0;
-    line-height: 160%;
+
+.titulo{
+    font-size: 300%;
+    padding: 0% 0 6% 0;
+    text-align: left;
+}
+#tituloQuem{
+    margin: 22% 0% 0% -10%;
+
+    color: #FFFFFF;
+}
+#tituloSteven{
+    margin: 15% 0% 0% -12%;
+
+}
+#tituloAdventure{
+    margin: 15% 0% 0% -70%;
+}
+#tituloContato{
+    margin: 5% 0% -1% 0%;
+    text-align: center;
+
+}
+
+
+#textoQuem{
+    margin: 0% 0% 0% -10%;
+    padding: 0 20% 0 0;
     float: left;
     text-align: left;
     width: 100%;
     color: #FFFFFF;
-    background-color: #000000;
 }
-
-.textoSugar{
+#textoSugar{
     text-align: center;
     padding: 1% 25% 0 25%;
 }
-
-
-.tituloSteven{
-    margin: 15% 0% 0% -12%;
-    font-size: 250%;
+#textoSteven{
+    margin: 0% 0% 0% -22%;
+    padding: 0% 30% 0 10%;
     text-align: left;
 }
-
-.textoSteven{
-    font-weight: 300;
-    font-size: 100%;
-    margin: 2% 0% 0% -22%;
-    padding: 0% 15% 0 10%;
-    float: left;
-    text-align: left;
-    width: 100%;
-}
-
-.citacaoSteven{
-    margin: 0 0 0 -25%; 
-    padding: 9% 40% 0 0%;
-    font-size: 260%;
-    font-weight: 800;
-    float: left;
-    text-align: left;
-
-}
-
-.autorSteven{
-    margin: 0 0 0 -25%; 
-    padding: 0 50% 0 0%;
-    font-size: 80%;
-    font-weight: 500;
-    text-align: left;
-    float: left;
-}
-
-.tituloAdventure{
-    margin: 15% 0% 0% -70%;
-    font-size: 250%;
-    text-align: left;
-}
-
-.textoAdventure{
-    font-weight: 300;
-    font-size: 100%;
+#textoAdventure{
     margin: 0% 80% 0% -70%;
-    padding: 2% 30% 0 0%;
-    float: left;
-    text-align: left;
-    width: 100%;
-}
-
-.citacaoAdventure{
-    margin: 0 0 0 -70%; 
-    padding: 12% 98% 0 0%;
-    font-size: 260%;
-    font-weight: 800;
-    float: left;
-    text-align: left;
-
-}
-
-.autorAdventure{
-    margin: 0 0 0 -70%; 
-    padding: 2% 131% 0 0%;
-    font-size: 80%;
-    font-weight: 500;
-    float: left;
+    padding: 0% 30% 0 0%;
     text-align: left;
 }
-
-
-.tituloContato{
-    margin: 5% 0% 5% 0%;
-    font-size: 300%;
-    text-align: center;
-
-}
-
 
 .chamadaContato-titulo{
     font-size: 180%;
@@ -433,14 +395,17 @@ input[type=email] {
     
 }
 
+
+
 .formContato {
-    margin: 0 0 0 -10%;
+    margin: 0 0 0 -5%;
 	padding-top: 0%;
 	padding-right: 10%;
 }
 
 /* Se não quisermos que os usuários possam editar o seu tamanho, precisamos especificá-lo. */
 textarea {
+    margin-top: 1%;
     width: 100% ;
     height: 40% ;
     min-height: 40%;
@@ -461,11 +426,10 @@ textarea {
 
 footer {
     height: 15%;
-    /* height: 25vh; */
-    background-color: #000000; 
+    background-color: #ffb510; 
     padding: 0% 0% 0% 0%; 
     font-size: 80%;
-    margin: 206% 0 0 0;
+    margin: 218% 0 0 0;
 }
 
 
