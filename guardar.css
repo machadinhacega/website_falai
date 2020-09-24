@@ -1,0 +1,438 @@
+
+*{
+    /* margens: ocupar todo espaço */
+    /* box: largura disponível */
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    background-color: #F3F3F3;
+    color: #474a51; 
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 100%;
+    font-weight: 300;
+    line-height: 160%;
+    text-rendering: optimizeLegibility;
+    /* overflow: hidden; */
+    /* Para desabiitar o scrol */
+}
+
+
+/* LINHAS */
+/* Todas as linhas utilizam 100% da largura da página. */
+/* A linha de Navegação recebeu um alinhamento e espaçamento interno diferente das demais */
+.linhaPadrao{
+    width: 100%;
+    text-align: center;
+}
+
+.linhaNavegacao{
+    width: 100%;
+    text-align: left;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+/* COLUNAS */
+/* O display block garante que elas comecem em linhas novas e que todos componentes ocupem toda largura. */
+/* (distância que possuem em relação às laterais)  */
+
+.colunaA{
+    display: block;
+    float: left;
+    margin: 0 0 0 0;
+}
+
+.colunaA:first-child { margin-left: 0;}
+
+
+.colunaB{
+    display: block;
+    float: left;
+    margin: 0 0 0 0;
+}
+
+.colunaB:first-child { margin-left: 0;}
+
+
+.colunaC{
+    display: block;
+    float: left;
+    margin: 1% 0 0 0;
+}
+
+.colunaC:first-child { margin-left: 0;}
+
+.colunaD{
+    display: block;
+    float: left;
+    margin: 0 0 0 0;
+    background-color: #000000;
+}
+
+.colunaA:first-child { margin-left: 0;}
+
+
+/* ELEMENTOS */
+/* Trata sobre a largura das nossas colunas */
+/* Se for querer mais do que 2 colunas por linha, precisa diminuir a largura que elas ocupam. */
+
+.umElemento{
+    width: 100%;
+}
+
+.doisElementos{
+    width: 50%;
+}
+
+.quatroElementos{
+	width: 50%;
+	margin-bottom: 1%;
+	padding-right: 0.5%;
+}
+
+.cincoElementos{
+	width: 50%;
+	margin-bottom: 1%;
+	padding-left: 0.5%;
+}
+
+/* SEÇÕES */
+/* Para que a gente consiga utilizar a cor de fundo para elas */
+section {
+    padding: 80px 0;
+}
+
+/* ~~~~~~~~~~~~~~~~~TEXTOS ~~~~~~~~~~~~~~~~~~ */
+
+.citacao{
+    font-size: 250%;
+    font-weight: 800;
+    text-align: left;
+    line-height: 120%;
+    float: left;
+}
+
+#citacaoAbertura{
+    margin: 18% 0% 0% 18%; 
+}
+
+
+#citacaoSteven{
+    margin: 0 0 0 -25%; 
+    padding: 9% 40% 0 0%;
+}
+
+#citacaoAdventure{
+    margin: 0 0 0 -70%; 
+    padding: 10% 98% 0 0%;
+}
+
+
+
+.autor{
+    font-size: 80%;
+    font-weight: 500;
+    text-align: left;
+    float: left;
+}
+#autorAbertura{
+    margin: 2% 0% 0% 19%; 
+}
+#autorSteven{
+    margin: 0 0 0 -25%; 
+    padding: 0 50% 0 0%;
+}
+#autorAdventure{
+    margin: 0 0 0 -70%; 
+    padding: 2% 131% 0 0%;
+}
+
+
+.titulo{
+    font-size: 300%;
+    padding: 0% 0 6% 0;
+    text-align: left;
+}
+#tituloQuem{
+    margin: 22% 0% 0% -10%;
+
+    color: #FFFFFF;
+}
+#tituloSteven{
+    margin: 15% 0% 0% -12%;
+
+}
+#tituloAdventure{
+    margin: 15% 0% 0% -70%;
+}
+#tituloContato{
+    margin: 5% 0% -1% 0%;
+    text-align: center;
+
+}
+
+#textoQuem{
+    margin: 0% 0% 0% -10%;
+    padding: 0 20% 0 0;
+    float: left;
+    text-align: left;
+    width: 100%;
+    color: #FFFFFF;
+}
+#textoSugar{
+    text-align: center;
+    padding: 1% 25% 0 25%;
+}
+#textoSteven{
+    margin: 0% 0% 0% -22%;
+    padding: 0% 30% 0 10%;
+    text-align: left;
+}
+#textoAdventure{
+    margin: 0% 80% 0% -70%;
+    padding: 0% 30% 0 0%;
+    text-align: left;
+}
+
+.chamadaContato-titulo{
+    font-size: 180%;
+    margin: 0 5% 0 20%;
+    text-align: left;
+}
+
+.chamadaContato-texto{
+    font-size: 83%;
+    line-height: 140%;
+    margin: 2% 15% 0 20%;
+    text-align: left;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~ IMAGENS ~~~~~~~~~~~~~~~~~~ */
+
+.imgLogo{
+    width: 7%;
+    height: auto;
+    padding: 1% 0 0 0;
+    /* float: left; */
+}
+
+
+
+.imgRebeccaPrincipal{
+    width: auto;
+    height: 93%;
+    margin-top: -10%;
+}
+
+.imgUkulele{
+    width: auto;
+    height: 90%;
+    margin: 11% 0% 0 0;
+    background-color: #000000;
+}
+
+.imgSugar{
+    width: 50%;
+    height: auto;
+    margin: 5% 25% 0% 25%;
+}
+
+
+.imgSteven{
+    width: 140%;
+    height: auto;
+    margin: -15% 0 0 -40%;
+}
+
+.imgAdventure{
+    width: 120%;
+    height: auto;
+    float: left;
+    margin: 0% 0 0 0%;
+    margin: -110% 0 0 80%;
+    padding: 0 0% 0 15%;
+}
+
+.imgAviaoPapel{
+    width: auto;
+    height: 20%;
+}
+
+.imgInsta{
+    width: auto;
+    height: 20%;
+    margin: 5.5% 0 0 12%;
+}
+
+.imgLinkedin{
+    width: auto;
+    height: 40%;
+    padding: 2.2% 0 0 2%;
+}
+
+/* ~~~~~~~~~~~~~~~~~ Botão ~~~~~~~~~~~~~~~~~~ */
+
+.botaoMensagem{
+    display: inline-block;
+    /* inline-block para que o texto não quebe a linha. */
+
+    padding: 2% 30%;
+    /* Para o texto ficar bem posicionado */
+
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    /* Transição. A cor de fundo do botão muda quando você passa por cima*/
+
+    background: #000000; 
+    border: 1px solid #000000;
+    color: #F8F9F9;
+    /* Mudamos a cor dos botões e de suas bordas.*/
+
+    margin-right: 25%;
+
+
+}
+/* Aqui que determinamos qual será a cor da transição e a ação dela, nesse caso, o pointer do mouse. */
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #ffb510;
+    border: 1px solid #ffb510;
+    cursor: pointer;
+}
+
+
+
+/* ~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~ */
+
+/* Para o Header pegar a tela inteira (Desativei pq ja fizemos) */
+/* height: 100vh; */
+
+
+
+.navegacaoPrincipal {
+    display: block;
+    /* display: block, faz com que ela fique em uma nova linha e que use toda a sua largura */
+    float: right;
+    /* fica posicionada na direita */
+    list-style: none;
+    /* Fica sem os macadores pq perde o estilo */
+    margin: 2% 0 0 0;
+    /* margem para centralizar */
+}
+
+.navegacaoPrincipal li {
+    display: inline-block;
+    /* Deixa tudo em uma linha ao inves de pular linha a linha */
+    margin-left: 20px;
+    /* O espaçamento à esquerda de cada palavra */
+}
+
+
+.navegacaoPrincipal li span {
+    padding: 8px 2px;
+    color: #444444;
+    font-size: 100%;
+    font-weight: 500;
+    /* cor, posicionamento interno e a fonte */
+    border-bottom: 2px solid transparent; 
+    -webkit-transition: border-bottom 0.2; 
+    transition: border-bottom 0.2;
+    /* transição ao passar o mouse */
+}
+
+.navegacaoPrincipal li span:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #ffb510;
+    /* transição ao passar o mouse */
+}
+
+
+/* posicionado a barra de navegação na frente de todos os outros componentes */
+.navegacaoPaginas {
+    /* z-index: 1000; */
+    /* position: fixed;  */
+    top: 0; 
+    left: 0;
+    width: 100%;
+    background-color: #f3f3f3;
+    font-size: 80%;
+    margin: auto 0;
+}
+
+.navegacaoPaginas ul {
+    margin-top: 25px;
+    font-size: 135%;   
+}
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~ FALE CONSCO ~~~~~~~~~~~~~~~~~~ */
+
+.sessaoContato {
+    height: 75vh; 
+    /* Em vez de 100vh foi usado 75vh para o footer ficar logo embaixo. */
+}
+
+
+.assunto,
+.nome,
+.email,
+input[type=email] {
+    min-width: 100%; 
+    max-width: 100%;
+    padding-left: 2%; 
+    padding-top: 2%; 
+    padding-bottom: 2%; 
+    
+}
+
+
+
+.formContato {
+    margin: 0 0 0 -5%;
+	padding-top: 0%;
+	padding-right: 10%;
+}
+
+/* Se não quisermos que os usuários possam editar o seu tamanho, precisamos especificá-lo. */
+textarea {
+    margin-top: 1%;
+    width: 100% ;
+    height: 40% ;
+    min-height: 40%;
+    max-height: 40%;
+    min-width: 100%;
+    max-width: 100%;
+    
+}
+
+/* Aqui tratamos o caso em que os dados são enviados com sucesso ou não, variando a cor de fundo. */
+.success { background-color: rgba(99, 209, 66, 0.57); }
+.error { background-color: rgba(234, 26, 26, 0.57); }
+
+
+
+/* ~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~ */
+
+
+footer {
+    height: 15%;
+    background-color: #ffb510; 
+    padding: 0% 0% 0% 0%; 
+    font-size: 80%;
+    margin: 218% 0 0 0;
+}
+
+
+footer p {
+    color: #F8F9F9;
+    text-align: left;
+    margin: 6% -50% 0 20%;
+}
