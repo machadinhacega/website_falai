@@ -5,30 +5,10 @@ body {
 }
 
 
-
-/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼ APENAS MARCAÇÃO - Limpar ao final ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
-header{
-    border: 2px solid #6db7fd;
-
-}
-
-.container{
-    border: 2px solid gray
-}
-
-
-
-.container * {
-    border: 1px solid hotpink;
-}
-/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ APENAS MARCAÇÃO - Limpar ao final ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲*/
-
-
 .navegation-bar{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    border: 2px solid tomato;
+    align-items: flex-start;
     justify-content: space-between;
     padding: 0 20px 0 20px;
 }
@@ -41,14 +21,17 @@ header{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    padding: 0 10px;
+    margin: auto;
 }
 
 .menu li {
     padding: 20px;
 }
 
-
+.menu > li > span:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #ffb510;
+}
 
 .container-botao img {
     height: 8%;
@@ -68,7 +51,8 @@ header{
 
 
 .citacao {
-    font-size: 200%;
+    /* font-size: 200%; */
+    font-size: 3.5vw;  /* Dessa forma deiuxa o tamanho proporcional à tela */
     font-weight: 600;
     flex-basis:0
 
@@ -104,7 +88,7 @@ p{
 
 
 .container > div {/* Container da Primeira Citação*/
-    margin: 8% -2% 0 4%;
+    margin: 8% 2% 0 4%;
     flex: 1 1 200px;
 
 }
@@ -117,8 +101,9 @@ p{
 
 
 #imgRebecca{
-    max-height: 450px;
-    /* margin-top: -3%; */
+    max-height: 43vw;
+    /* max-height: 85vh; */
+    margin-top: -3%;
 }
 
 #imgRebecca_2{
@@ -131,10 +116,12 @@ p{
     align-items: flex-start;
     height: 100vh; 
     background-color: #000000;
+    
 }
 .quem > div { /* Titulo e Texto de 'Quem'*/
     color: #ffffff;
     margin: 10% 18% 0% 0;
+    max-height: 75vh;
 }
 
 .sugar { /* Container Sugar*/
@@ -158,51 +145,179 @@ p{
 }
 
 .steven > div { /* Container Steven DIV*/
-    margin-top: 4%;
-    padding: 0 8% 0 3%;
+    /* margin: auto; */
+    margin: 0 0 0 -3%;
+    padding: 2% 10% 0 0%;
+    /* background: tomato; */
 }
 
+#tituloSteven{
+    padding: 0 0 0 15%;
+}
 
-#citacao-steven{
-    display: flex;
-    flex-direction: column  ;
-    justify-content: flex-start; 
-    margin: -10% 2% 0 35%;
+#textoSteven{
+    padding: 0 0 0 15%;
+}
+
+#citacaoSteven{
+    padding: 5% 20% 0 0;
 }
 
 
 
 .adventure > div { /* Container Adventure DIV*/
-    background: chartreuse;
+    margin: auto;
+    padding: 0 5% 0 10%;
+    /* background: chartreuse; */
 }
 
+#citacaoAdventure{
+    padding: 5% 0% 0 0;
+
+}
 
 #imgfalaAdventure{
-    max-height: 200px;
-    max-width: 200px;
+    max-width: 45%;
 }
 
 
-/* ~~~~~~~~~~~~~~~~~~~IMAGENS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼ APENAS MARCAÇÃO - Limpar ao final ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
-
-
-#imgaviaodepapel{
-    max-height: 200px;
-    max-width: 200px;
+#tituloContato {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
 }
 
+
+.contato {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 85vh;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* align-items: flex-start; */
+
+}
+
+.contato > div {
+    max-width: 38%;
+    margin: auto;
+    margin-top: -2%;
+
+}
+
+.contato > div > h2 {
+    padding-bottom: 3%;
+    font-size: 2rem;
+}
+
+.formContato {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+    max-width: 40%;
+    margin: auto;
+    margin-top: -2%;
+    margin-left: -6%;
+
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~CONTATO~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+.assunto,
+.nome,
+.email{
+    padding: 2% 0% 2% 2%;
+    box-sizing: border-box;
+}
+
+.nome, .email {
+    min-width: 48%; 
+    max-width: 48%;
+}
+
+
+.assunto {
+    min-width: 100%; 
+    max-width: 100%;
+    margin: 2% 0 0 0;
+}
+
+
+textarea { /* Se não quisermos que os usuários possam editar o seu tamanho, precisamos especificá-lo. */
+    margin-top: 2%;
+    width: 100% ;
+    resize: none;
+    box-sizing: border-box;    
+}
+
+/* Aqui tratamos o caso em que os dados são enviados com sucesso ou não, variando a cor de fundo. */
+.success { background-color: rgba(99, 209, 66, 0.57); }
+.error { background-color: rgba(234, 26, 26, 0.57); }
+
+
+
+
+
+/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+.botaoMensagem{
+    display: inline-block;
+    /* inline-block para que o texto não quebe a linha. */
+
+    width: 40%;
+
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    /* Transição. A cor de fundo do botão muda quando você passa por cima*/
+
+    background: #000000; 
+    border: 1px solid #000000;
+    color: #F8F9F9;
+    /* Mudamos a cor dos botões e de suas bordas.*/
+
+    margin-right: 25%;
+    margin-top: 2%;
+    padding: 2%;
+
+
+
+}
+/* Aqui que determinamos qual será a cor da transição e a ação dela, nesse caso, o pointer do mouse. */
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #ffb510;
+    border: 1px solid #ffb510;
+    cursor: pointer;
+}
+
+
+footer {
+    background: #000000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    height: 15vh;
+    
+
+}
+
+footer > p {
+    width: 70%;
+    margin-left: 10%;
+    font-size: 65%;
+}
 
 #imginsta{
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 2vw;
+    max-width: 2vw;
+    margin-right: 1vw ;
 }
 #imglinkedIn{
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 2.3vw;
+    max-width: 2.3vw;
+    margin-right: 2vw ;
 }
-
-
-
-/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ APENAS MARCAÇÃO - Limpar ao final ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲*/
