@@ -1,11 +1,56 @@
 @charset #UTF-8;
 
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼ ITENS PADRÕES ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
+
 body {
     font-family: 'Montserrat Alternates', sans-serif;
     background-color: #F3F3F3;
     color: #474a51; 
 }
 
+
+.container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-flow: row wrap; */
+    align-items: center;
+}
+
+
+.citacao {
+    /* font-size: 200%; */
+    font-size: 3.5vw;  /* Dessa forma deiuxa o tamanho proporcional à tela */
+    font-weight: 600;
+    flex-basis:0
+
+}
+
+.autor {
+    font-size: 80%;
+    font-weight: 500;
+}
+
+img {
+    max-width:100%;
+}
+
+.titulo{
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 2%;
+}
+
+p{
+    font-size: 1.2em;
+    line-height: 140%;
+    font-weight: 500;
+}
+
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ITENS PADRÕES ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+
+/* BARRA NAVEGAÇÃO  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .navegation-bar{
     display: flex;
@@ -35,62 +80,29 @@ body {
     border-bottom: 2px solid #ffb510;
 }
 
+header {
+    height: 15vh;
+}
+
 .container-botao img {
     height: 8%;
-    margin: 32% 0 0 92%;
+    margin: 70vh 0 0 93vw;
+    /* margin: 38% 0 0 93%; */
     position: fixed ;
 
 }
 
-/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼ ITENS PADRÕES ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
-
-.container {
-    display: flex;
-    /* flex-wrap: wrap; */
-    /* flex-flow: row wrap; */
-    align-items: center;
-}
-
-
-.citacao {
-    /* font-size: 200%; */
-    font-size: 3.5vw;  /* Dessa forma deiuxa o tamanho proporcional à tela */
-    font-weight: 600;
-    flex-basis:0
-
-}
-
-.autor {
-    font-size: 80%;
-    font-weight: 500;
-}
-
-img {
-    max-width:100%;
-}
-
-.titulo{
-    font-size: 180%;
-    font-weight: 600;
-    padding-bottom: 2%;
-}
-
-p{
-    font-size: 80%;
-    line-height: 140%;
-    font-weight: 500;
-}
-
-/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ITENS PADRÕES ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
-
+/* HOME ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .home { /* Container home*/
-    align-items: flex-start;
+    align-items: flex-end;
+    /* height: auto; */
+    height: 85vh;
 }
 
 
 .container > div {/* Container da Primeira Citação*/
-    margin: 8% 2% 0 4%;
+    margin: 8% 0% 2% 4%;
     flex: 1 1 200px;
 
 }
@@ -102,11 +114,18 @@ p{
 }
 
 
+.autor-abertura {
+    padding-bottom: 30vh;
+}
+
+
 #imgRebecca{
-    max-height: 43vw;
+    height: 85vh;
     /* max-height: 85vh; */
     margin-top: -3%;
 }
+
+/* QUEM ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 #imgRebecca_2{
     /* max-height: 100vh; */
@@ -154,6 +173,8 @@ p{
 }
 
 
+/* TRABALHO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 #imgfalaSteven{
     max-width: 50%;
     margin: -5% 0% 0% -12%;
@@ -188,7 +209,11 @@ p{
 }
 
 #citacaoSteven{
-    padding: 5% 20% 0 0;
+    padding: 8% 10% 0 10%;
+}
+
+#autorSteven{
+    padding: 0% 10% 0 10%;   
 }
 
 .adventure > div { /* Container Adventure DIV*/
@@ -201,8 +226,12 @@ p{
     display: none;
 }
 
+#tituloAdventure{
+    margin-top: 5%;
+}
+
 #citacaoAdventure{
-    padding: 5% 0% 0 0;
+    padding: 10% 0% 0 0;
 
 }
 
@@ -211,11 +240,14 @@ p{
 }
 
 
+/* CONTATO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 #tituloContato {
     width: 100%;
     text-align: center;
     font-size: 2em;
-    margin-bottom: 7%;
+    margin-top: 7%;
+    margin-bottom: 8%;
 }
 
 
@@ -240,6 +272,7 @@ p{
 .contato > div > h5 {
     max-height: 80vh;
     overflow: auto;
+    margin-bottom: 20%;
 }
 .formContato {
     display: flex;
@@ -249,14 +282,7 @@ p{
     margin: auto;
     margin-top: -2%;
     margin-left: -6%;
-
 }
-
-
-
-/* ~~~~~~~~~~~~~~~~~~~CONTATO~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-
 
 .assunto,
 .nome,
@@ -291,10 +317,6 @@ textarea { /* Se não quisermos que os usuários possam editar o seu tamanho, pr
 
 
 
-
-
-/*  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
 .botaoMensagem {
     width: 40%;
     margin-right: 25%;
@@ -328,6 +350,8 @@ input[type=submit]:active {
 }
 
 
+/* FOOTER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 footer {
     background: #000000;
     color: #ffffff;
@@ -356,9 +380,10 @@ footer > p {
 
 
 
+/* RESPONSIVO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* menos da metade da tela de 1024 ~~~~~~~~~~~~~~~~~~~~~ */
 
-
-@media (max-width: 430px) { /* menos da metade da tela de 1024 */
+@media (max-width: 430px) {
 
     body, html {
         overflow-x: hidden;
@@ -385,7 +410,7 @@ footer > p {
         display: flex;
         flex-wrap: wrap;
         align-items: flex-end;
-        height: auto;
+        /* height: 85vh; */
     }
     .citacao-abertura {
         font-size: 1.2rem;
@@ -397,15 +422,15 @@ footer > p {
     }
 
     #imgRebecca {
-        max-height:70vw;
+        max-height:100vw;
         max-width: 100%;
         margin:auto;
     }
 
     .quem{ /* QUEM*/
         background-color: #000000;
-        height: 50vh; 
-        max-height: 50vh;     
+        height: 56vh; 
+        max-height: 60vh;     
 
     }
 
@@ -426,6 +451,7 @@ footer > p {
         font-size: 2vh;
         text-align: left;  
         margin: 0 5% 0 10%;
+
     }
 
 
@@ -453,8 +479,8 @@ footer > p {
 
     .imgGems {
         display: flex;
-        width: 50%;
-        padding: 20% 0 25% 10%;     
+        width: 90%;
+        padding: 20% 0 25% 0%;     
 
     }
 
@@ -590,31 +616,12 @@ footer > p {
         width: 5vw;
         max-width: 5vw;
         margin:  0 0 0 10%;
-        
     }
-
-
-
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~MOBILE~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
+/* RESPONSIVO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* MOBILE ~~~~~~~~~~~~~~~~~~~~~ */
 
 @media (max-width: 360px) { 
     body, html{
@@ -633,13 +640,13 @@ footer > p {
         display: flex;
         flex-wrap: wrap;
         align-items: flex-end;
-        /* flex-direction: row-reverse; */
-        height: 78vh;
+        max-height: 85vh;
     }
     
     header {
         display: flex;
         justify-content: center;
+        margin-top: 5%;
     }
 
     .img-logo {
@@ -648,18 +655,23 @@ footer > p {
     }
 
     .citacao-abertura {
-        font-size: 1.2rem;    }
+        font-size: 1.3rem;    }
 
     .container > div {/* Container da Primeira Citação*/
-        margin: 0 10% 0 10%;
+        margin: 4% 10% 5% 10%;
         text-align: center;
     
     }
+
+    .container > div > :last-child{
+        margin: 0 0 0 0;
+        margin-bottom: 5%;
+    }
     
     #imgRebecca {
-        max-height:100vw;
-        max-width: 100%;
-        margin: 0 0 0 5%;
+        margin-left: -5%;
+        max-height: 62vh;
+        max-width:62vh;
     }
 
     .quem{ /* QUEM*/
@@ -676,7 +688,7 @@ footer > p {
     .quem > div { /* Titulo e Texto de 'Quem'*/
         color: #ffffff;
         text-align: left;
-        overflow: visible;
+        /* overflow: visible; */
     }
     .quem > div :first-child {
         margin: 10% 0% 0 10%;      
@@ -709,7 +721,7 @@ footer > p {
 
     .imgGems {
         display: flex;
-        width: 50%;
+        width: 55%;
         padding: 10% 0 15% 40%;       
     }
 
@@ -832,11 +844,6 @@ footer > p {
         max-height: 5vw;
         width: 5vw;
         max-width: 5vw;
-        margin:  0 0 0 10%;
-        
+        margin:  0 0 0 10%;   
     }
-
 }
-
-
-
