@@ -1,0 +1,910 @@
+@charset #UTF-8;
+
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼ ITENS PADRÕES ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: #F3F3F3;
+    color: #474a51; 
+}
+
+
+.container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-flow: row wrap; */
+    align-items: center;
+}
+
+
+.citacao {
+    /* font-size: 200%; */
+    font-size: 3.5vw;  /* Dessa forma deiuxa o tamanho proporcional à tela */
+    font-weight: 600;
+    flex-basis:0
+
+}
+
+.autor {
+    font-size: 80%;
+    font-weight: 500;
+}
+
+img {
+    max-width:100%;
+}
+
+.titulo{
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 2%;
+}
+
+p{
+    font-size: 1.2em;
+    line-height: 140%;
+    font-weight: 500;
+}
+
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ITENS PADRÕES ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+
+/* BARRA NAVEGAÇÃO  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.navegation-bar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+
+.img-logo{
+    height: 100px;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: auto;
+}
+
+.menu li {
+    padding: 20px;
+}
+
+.menu > li > span:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #ffb510;
+}
+
+header {
+    height: 15vh;
+}
+
+.container-botao img {
+    height: 8%;
+    margin: 70vh 0 0 93vw;
+    /* margin: 38% 0 0 93%; */
+    position: fixed ;
+
+}
+
+
+/* HOME ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.home { /* Container home*/
+    align-items: flex-end;
+    /* height: auto; */
+    height: 85vh;
+}
+
+
+.container > div {/* Container da Primeira Citação*/
+    margin: 8% 0% 2% 4%;
+    flex: 1 1 200px;
+
+}
+
+
+/* Faz com que os elementos fiquem grudados no container */
+.container > div * {/*Primeira Citação e Autor)*/
+    margin: auto;
+}
+
+
+.autor-abertura {
+    padding-bottom: 30vh;
+}
+
+
+#imgRebecca{
+    max-height: 85vh;
+    margin-top: -3%;
+}
+
+/* QUEM ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#imgRebecca_2{
+    /* max-height: 100vh; */
+    max-height: 50.1vw;
+    margin: 0 0 0 -11px;
+}
+
+.quem{ /* QUEM*/
+    display: flex;
+    align-items: flex-start;
+    max-height: 50.1vw; 
+    background-color: #000000;
+    margin: 0 -8px 0 -2%;
+;
+    
+}
+.quem > div { /* Titulo e Texto de 'Quem'*/
+    color: #ffffff;
+    margin: 10% 18% 0% 0;
+    max-height: 35vw; 
+    /* border: 1px solid salmon; */
+    overflow: auto;
+}
+
+
+.sugar { /* Container Sugar*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 5% 25% 5% 20%;
+}
+
+
+.videoEmicida {
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    padding: 5%;
+}
+.videoEmicida:hover,
+.videoEmicida:active {
+    background-color: #ffb510;
+    border: 1px solid #ffb510;
+    cursor: pointer;
+}
+
+
+/* TRABALHO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#imgfalaSteven{
+    max-width: 50%;
+    margin: -5% 0% 0% -12%;
+}
+
+.steven{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.steven > div { /* Container Steven DIV*/
+    /* margin: auto; */
+    margin: 0 0 0 -3%;
+    padding: 2% 10% 0 0%;
+    /* background: tomato; */
+}
+
+
+
+#tituloSteven{
+    padding: 0 0 0 15%;
+}
+
+.imgGems {
+    display: none;
+}
+
+#textoSteven{
+    padding: 0 0 0 15%;
+}
+
+#citacaoSteven{
+    padding: 8% 10% 0 10%;
+}
+
+#autorSteven{
+    padding: 0% 10% 0 10%;   
+}
+
+.adventure > div { /* Container Adventure DIV*/
+    margin: auto;
+    padding: 0 5% 0 10%;
+    /* background: chartreuse; */
+}
+
+.imgSword {
+    display: none;
+}
+
+#tituloAdventure{
+    margin-top: 5%;
+}
+
+#citacaoAdventure{
+    padding: 10% 0% 0 0;
+
+}
+
+#imgfalaAdventure{
+    max-width: 45%;
+}
+
+
+/* CONTATO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#tituloContato {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 7%;
+    margin-bottom: 8%;
+}
+
+
+.contato {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+}
+
+.contato > div {
+    max-width: 38%;
+    margin: auto;
+    margin-top: -2%;
+
+}
+
+.contato > div > h2 {
+    padding-bottom: 3%;
+    font-size: 3.2vw;
+}
+
+.contato > div > h5 {
+    max-height: 80vh;
+    overflow: auto;
+    margin-bottom: 20%;
+}
+.formContato {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+    max-width: 40%;
+    margin: auto;
+    margin-top: -2%;
+    margin-left: -6%;
+}
+
+.assunto,
+.nome,
+.email{
+    padding: 2% 0% 2% 2%;
+    box-sizing: border-box;
+}
+
+.nome, .email {
+    min-width: 48%; 
+    max-width: 48%;
+}
+
+
+.assunto {
+    min-width: 100%; 
+    max-width: 100%;
+    margin: 2% 0 0 0;
+}
+
+
+textarea { /* Se não quisermos que os usuários possam editar o seu tamanho, precisamos especificá-lo. */
+    margin-top: 2%;
+    width: 100% ;
+    resize: none;
+    box-sizing: border-box;    
+}
+
+/* Aqui tratamos o caso em que os dados são enviados com sucesso ou não, variando a cor de fundo. */
+.success { background-color: rgba(99, 209, 66, 0.57); }
+.error { background-color: rgba(234, 26, 26, 0.57); }
+
+
+
+.botaoMensagem {
+    width: 40%;
+    margin-right: 25%;
+    margin-top: 2%;
+    padding: 2%;
+}
+
+
+.botao{
+    display: inline-block;
+    /* inline-block para que o texto não quebe a linha. */
+
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    /* Transição. A cor de fundo do botão muda quando você passa por cima*/
+
+    background: #000000; 
+    border: 1px solid #000000;
+    color: #F8F9F9;
+    /* Mudamos a cor dos botões e de suas bordas.*/
+
+
+
+}
+/* Aqui que determinamos qual será a cor da transição e a ação dela, nesse caso, o pointer do mouse. */
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #ffb510;
+    border: 1px solid #ffb510;
+    cursor: pointer;
+}
+
+
+/* FOOTER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+footer {
+    background: #000000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    height: auto;
+}
+
+footer > p {
+    width: 70%;
+    margin-left: 10%;
+    font-size: 65%;
+}
+
+#imginsta{
+    max-height: 2vw;
+    max-width: 2vw;
+    margin-right: 1vw ;
+}
+#imglinkedIn{
+    max-height: 2.3vw;
+    max-width: 2.3vw;
+    margin-right: 2vw ;
+}
+
+
+
+/* RESPONSIVO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* menos da metade da tela de 1024 ~~~~~~~~~~~~~~~~~~~~~ */
+
+@media (max-width: 430px) {
+
+    body, html {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    .container-botao{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+    .img-logo {
+        max-height: 25vw;
+        margin: 5% 0 0 -2%;
+    }
+    .home{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        /* height: 85vh; */
+    }
+    .citacao-abertura {
+        font-size: 1.2rem;
+        
+    .autor-abertura {
+        padding-bottom: 0;
+    }
+    
+    }
+    .container > div {/* Container da Primeira Citação*/
+        margin: 2% 10% 2% 10%;
+        text-align: center;
+
+    }
+
+    #imgRebecca {
+        max-height:100vw;
+        max-width: 100%;
+        margin:auto;
+    }
+
+    .quem{ /* QUEM*/
+        background-color: #000000;
+        height: 56vh; 
+        max-height: 60vh;     
+
+    }
+
+    #imgRebecca_2{
+        display: none;
+    }
+
+    .quem > div { /* Titulo e Texto de 'Quem'*/
+        color: #ffffff;
+        text-align: left;
+        overflow: visible;
+    }
+    .quem > div :first-child {
+        margin: 10% 0% 0 10%;      
+    }
+
+    .quem > div :last-child{
+        font-size: 2vh;
+        text-align: left;  
+        margin: 0 5% 0 10%;
+
+    }
+
+
+    .videoEmicida {
+        margin-top: 5%;
+        margin-bottom: 30%;
+    }
+
+        .steven > div { /* Container Steven DIV*/
+        margin: 0% 0% 0% 0%;
+    }
+
+    #tituloSteven{
+        padding: 0 0 0 0;
+        width: 90%;
+        font-size: 2.2rem;
+        font-weight: 600;
+        text-align: left;
+        margin: 0 0 0% 10%;
+    }
+
+    #imgfalaSteven{
+        margin-top: -10%;
+    }
+
+    .imgGems {
+        display: flex;
+        width: 90%;
+        padding: 20% 0 25% 0%;     
+
+    }
+
+    #textoSteven{
+        padding: 0 0 0 0%;
+        margin: 0 5% 0 -60%;
+        text-align: left;
+  
+    }
+
+    #citacaoSteven{
+        padding: 0 0% 0 0;
+        margin: 4% 20% 0 -60%;
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    #autorSteven{
+        padding: 0 30% 0 0;
+        margin: 0% 20% 0 -60%;
+        text-align: left;
+    }
+
+
+    .adventure {
+        margin-top: -10%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .adventure > div { /* Container Adventure DIV*/
+        margin: -35% 0 0 0;
+        text-align: left;
+        justify-content: flex-start;
+        padding: 0 5% 0 10%;
+    }
+
+    #tituloAdventure {
+        width: 50%;
+        margin: 5% 0 0 0;
+    }
+
+    .container > div *{
+        margin:  0% 0 0 0;
+    }
+
+    .imgSword{
+        display: flex;
+        width: 50%;
+        padding: 0% 0 5% 0;
+    }
+
+    #textoAdventure{
+        margin: 0 10% 0 0;
+    }
+
+    #citacaoAdventure{
+        padding: 5% 10% 0 0;
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+
+    #imgfalaAdventure{
+        max-width: 45%;
+        margin-right: -60%;
+        margin-top: 5%;
+    }
+
+
+    #tituloContato {
+        padding: 0% 0 0% 0;
+        margin: 15% 2% 0 0;
+        /* color: #F3F3F3;
+        background-color: #474a51; */
+    }
+
+    .contato {
+        height: auto;    
+    }
+
+    .contato > div {
+        padding-top: 0;
+        text-align: left;
+        max-width: 80%;
+    }
+
+    .contato > div > h2 {
+
+        font-size: 1.4rem;
+        padding-right: 5%;
+    }
+
+    .contato > div > h5 {
+        padding-right: 10%;
+    }
+
+    .formContato {
+        max-width: 75%;
+        margin: 5% 5% 5% 0% ;
+    }
+
+    footer {
+        display:  flex;
+        flex-wrap: wrap;
+        margin:  0 0 0 0;
+        height: auto;
+    }
+
+    footer > p {
+        width: 80%;
+        max-width: 80%;
+        font-size: 0.6rem;
+        margin:  5% 0 0 10%;
+    }
+
+    footer > ul {
+        width: 80% ;
+        margin: 2% 0 0 0;
+
+    }
+
+    #imginsta {
+        height: 5vw;
+        max-height: 5vw;
+        width: 5vw;
+        max-width: 5vw;
+        margin:  0 0 0 0;
+    }
+    #imglinkedIn{
+        height: 5vw;
+        max-height: 5vw;
+        width: 5vw;
+        max-width: 5vw;
+        margin:  0 0 0 10%;
+    }
+}
+
+
+/* RESPONSIVO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* MOBILE ~~~~~~~~~~~~~~~~~~~~~ */
+
+@media (max-width: 414px) { 
+    body, html{
+        overflow-x: hidden;
+        margin: 0;
+        }
+
+    .container-botao{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+    .home{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        max-height: 85vh;
+    }
+    
+    header {
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+    }
+
+    .img-logo {
+        max-height: 25vw;
+        margin: 5% 0 0 -2%;
+    }
+
+    .citacao-abertura {
+        font-size: 1.3rem;    }
+
+    .container > div {/* Container da Primeira Citação*/
+        margin: 4% 10% 5% 10%;
+        text-align: center;
+        padding: 0;
+    }
+    .autor-abertura {
+        padding-bottom: 0vh;
+    }
+    
+    .container > div > :last-child{
+        margin: 0 0 0 0;
+        margin-bottom: 5%;
+    }
+    
+    #imgRebecca {
+        margin-left: -5%;
+        max-height: 65vh;
+        max-width:65vh;
+    }
+
+    .quem{ /* QUEM*/
+        background-color: #000000;
+        height: 68vh; 
+        max-height: 68vh;   
+ 
+    }
+
+    p{
+        font-size: 2.2vh;
+    }
+
+    #imgRebecca_2{
+        display: none;
+    }
+
+    .quem > div { /* Titulo e Texto de 'Quem'*/
+        color: #ffffff;
+        text-align: left;
+        /* overflow: visible; */
+    }
+    .quem > div :first-child {
+        margin: 10% 0% 0 10%;      
+    }
+
+    .quem > div :last-child{
+        font-size: 2vh;
+        text-align: left;  
+        margin: 0 5% 0 10%;
+    }
+
+
+    .videoEmicida {
+        margin-top: 5%;
+        margin-bottom: 30%;
+    }
+
+
+
+    .steven > div { /* Container Steven DIV*/
+        margin: 0% 0% 0% 0%;
+    }
+    
+    #tituloSteven{
+        padding: 0 0 0 0;
+        width: 40%;
+        text-align: left;
+        margin: 0 0 0% 10%;
+    }
+
+    .imgGems {
+        display: flex;
+        width: 55%;
+        padding: 10% 0 15% 10%;       
+    }
+
+    #textoSteven{
+        padding: 0 4% 0 0%;
+        margin: 5% 25% 0 -40%;
+        text-align: left;
+    }
+
+    #citacaoSteven{
+        padding: 0 0% 0 0;
+        margin: 4% 20% 0 -40%;
+        font-size: 1.4rem;
+        text-align: left;
+    }
+
+    #autorSteven{
+        padding: 0 30% 0 0;
+        margin: 0% 50% 0 -40%;
+        text-align: left;
+    }
+
+
+    .adventure {
+        margin-top: -10%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .adventure > div { /* Container Adventure DIV*/
+        margin: -35% 0 0 0;
+        text-align: left;
+        justify-content: flex-start;
+        padding: 0 5% 0 10%;
+    }
+
+    #tituloAdventure {
+        width: 50%;
+        margin: 5% 0 0 0;
+    }
+    
+    .container > div *{
+        margin:  0% 0 0 0;
+    }
+
+    .imgSword{
+        display: flex;
+        width: 50%;
+        padding: 5% 0 5% 0;
+    }
+
+    #citacaoAdventure{
+        padding: 5% 10% 0 0;
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    
+    #imgfalaAdventure{
+        max-width: 45%;
+        margin-right: -65%;
+    }
+    
+    
+    #tituloContato {
+        padding: 2% 0 2% 0;
+    }
+    
+    .contato {
+        height: auto;    
+    }
+    
+    .contato > div {
+        text-align: left;
+        max-width: 80%;
+    }
+    
+    .contato > div > h2 {
+        font-size: 1.4rem;
+        padding-right: 5%;
+    }
+
+    .contato > div > h5 {
+        padding-right: 10%;
+    }
+    
+    .formContato {
+        max-width: 75%;
+        margin: 5% 5% 5% 0% ;
+    }
+
+    footer {
+        display:  flex;
+        flex-wrap: wrap;
+        margin:  0 0 0 0;
+    }
+
+    footer > p {
+        width: 80%;
+        max-width: 80%;
+        font-size: 0.6rem;
+        margin:  5% 0 0 10%;
+    }
+
+    footer > ul {
+        width: 80% ;
+        margin: 2% 0 0 0;
+
+    }
+
+    #imginsta {
+        height: 5vw;
+        max-height: 5vw;
+        width: 5vw;
+        max-width: 5vw;
+        margin:  0 0 0 0;
+    }
+    #imglinkedIn{
+        height: 5vw;
+        max-height: 5vw;
+        width: 5vw;
+        max-width: 5vw;
+        margin:  0 0 0 10%;   
+    }
+}
+
+@media (max-width: 320px) { 
+    #imgRebecca {
+    margin-left: 5%;
+    max-height: 54vh;
+    max-width: 54vh;
+    }
+    
+    .steven > div { /* Container Steven DIV*/
+        margin: -45% 0% 0% 35%;
+    }
+    
+    #tituloSteven, #tituloAdventure {
+        font-size:1.8rem;
+    }
+}
+
+
+@media (max-width: 280px) { 
+    
+    .quem{
+    height: 75vh;
+    max-height: 75vh
+    }
+    
+    #imgRebecca {
+    margin-left: -5%;
+    max-height: 54vh;
+    max-width: 54vh;
+    }
+    
+    .chamadaContato-titulo{
+        padding-bottom:5%;
+    }
+}
+
+
+@media (max-width: 1024px) and (max-height: 1366px) {
+    header{
+        height: auto;
+    }
+    .home {
+     height: auto;
+    }
+    .container-botao img {
+        height: 5%;
+        margin: 70vh 0 0 90vw;
+    }
+}

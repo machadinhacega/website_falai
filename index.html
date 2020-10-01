@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8" />
+        <!-- Verificar -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <!-- Tipografia -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700;800&display=swap" rel="stylesheet">
+        <title>falaí</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="navegation-bar">
+                <img src="./images/logo.png" class="img-logo">
+                <nav>
+                    <ul class="menu">
+                        <li><span onclick="document.querySelector('.section-quem').scrollIntoView({ behavior:'smooth'});">Quem</span></li>
+                        <li><span onclick="document.querySelector('.section-trabalho').scrollIntoView({ behavior:'smooth'});">Trabalho</span></li>
+                        <li><span onclick="document.querySelector('.section-contato').scrollIntoView({ behavior:'smooth'});">Contato</span></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <span class="container-botao" onclick="document.querySelector('header').scrollIntoView({ behavior:'smooth'});"><img src="./images/botao-fixo.png"></span>
+       
+        <div class="container home">
+            <div>
+                <h1 class="citacao citacao-abertura">I want to feel like I exist and I want everyone else who wants to feel that way to feel that way, too.</h1>
+                <h4 class="autor autor-abertura">Rebecca Suggar</h4> 
+            </div>
+            <img id="imgRebecca" src="./images/Rebecca_1.png" class="imgRebecca_1">
+        </div>
+
+        
+        
+        <section class="section-quem">
+            <div class="container quem">
+                <img src="./images/Rebecca_2.png" id="imgRebecca_2">
+                <div>
+                    <h2 class="titulo" id="tituloQuem">Rebecca Sugar</h2>
+                    <p>Rebecca Sugar é uma animadora, compositora, ativista dos direitos lgbtqia+ e diretora norte-americana. Entre suas principais criações está a série de televisão animada chamada Steven Universe, um desenho que estreou no Cartoon Network em novembro de 2013 e promove uma reflexão sobre temas como auto conhecimento, sexualidade, representatividade, entre outros. Steven Universe foi a primeira série produzida pelo Cartoon Network criada por uma mulher.
+                </div>
+            </div>
+            <div class="container sugar">
+                <img src="./images/Sugar.png" id="imgSugar">
+                <p>Rebecca Sugar também trabalhou na série “Hora de Aventura” como escritora e artista de storyboard. Em seus dois trabalhos, ela recebeu nomeação de quatro Prémios Emmy do Primetime.</p>
+                <p>Em 2019 Rebecca Sugar e o rapper Emicida se encontraram durante a CCXP para uma "Gem Session" exclusiva. Eles cantaram Everything Stays, Passarinhos e Crystal Gems, além de conversarem sobre suas inspirações na música e memórias da infância com muito desenho e família. </p>
+                <a href="https://www.youtube.com/watch?v=UkXNKeR_ONY" target="_blank"> <input type="button" value="Confira o vídeo no youtube" class="botao videoEmicida">
+                </a>
+            </div>
+        </section>
+
+
+
+        <section class="section-trabalho">
+            <div class="container steven">
+                <img src="./images/falaSteven.png" id="imgfalaSteven">
+                <div>
+                    <h2 class="titulo" id="tituloSteven">Steven Universe</h2>
+                    <img src="./images/Gems.png" class="imgGems">
+                    <p id="textoSteven">Steven Universe é a história de amadurecimento de um menino, Steven Universe, que mora com as Crystal Gems - seres intergaláticos mágicos. As chamadas Garnet, Pérola e Ametista - na cidade fictícia de Beach City. Steven, que é meio Gem, tem aventuras com seus amigos e ajuda as Crystal Gems a proteger o mundo de sua própria espécie e as Gems corrompidas do Planeta Natal.</p>
+                    <p id="textoSteven">Steven Universe estreou em 4 de novembro de 2013 e teve seu fim em 21 de janeiro de 2019.[1]Mas possui uma continuação chamada Steven Universe Future e um filme. Além disso é o primeiro programa de animação da Cartoon Network criado exclusivamente por uma mulher. Os temas da série incluem amor, temáticas LGBT, preservação da natureza, magia, espaço, amadurecimento e família. Livros, quadrinhos e um videogame baseado na série foram lançados, e um filme, que foi lançado no dia 2 de setembro mundialmente e 7 de outubro nacionalmente.</p>
+                    <h1 class="citacao" id="citacaoSteven">Take a moment to think of just flexibility, love, and trust.</h1>
+                    <h4 class="autor" id="autorSteven">Here comes a thought -  Rebecca Sugar Song</h4>
+                </div>
+            </div>
+
+            <div class="container adventure">
+                <div>
+                    <img src="./images/sword.png" class="imgSword">
+                    <h2 class="titulo" id="tituloAdventure">Adventure Time</h2>
+                    <p id="textoAdventure">Rebecca Sugar entrou na equipe de Hora de aventura como revisora de storyboard na primeira temporada do desenho. Por causa da qualidade do seu trabalho, depois de um mês de ser contratada, é promovida para artista de storyboard fazendo a sua estreia na segunda temporada. O seu primeiro feito na série como artista de storyboard foi o episódio “Veio da Noitosfera”, lançado em 2010. Antes de tudo isso, Rebecca já havia lançado alguns outros trabalhos, como o curta de animação “Singles”, feito quando ainda era estudante.</p>    
+                    <h1 class="citacao" id="citacaoAdventure">Everything stays right where you left it. Everything stays, but it still changes.</h1>
+                    <h4 class="autor" id="autorAdventure">Everything stays - Rebecca Sugar Song</h4>
+                </div>
+                <img src="./images/falaAdventure.png" id="imgfalaAdventure">
+            </div>
+        </section>
+
+
+
+        <section class="section-contato">
+            <div class="container contato">
+                <h2 id="tituloContato">Contato</h2>
+                <div id="chamada">
+                    <h2 class="chamadaContato-titulo">Conhece alguém f*da e que poderia estar por aqui? Falaí</h2>
+                    <h5 class="chamadaContato-texto">Se você já nos conhece sabe que estamos sempre abertos para conhecer novas pessoas e novos projetos. Todo mês <span style="color: #b3b3b3;">(ou quinzena ou semana, tudo depende)</span> trazemos alguém novo para vocês conhecerem. O único critério é ter vontade, afinal, acreditamos que todos, sem exceção, têm algo interessante para compartilhar.</h5>
+                </div>
+                <form class="formContato" id="formularioContato" enctype="text/plain">
+                    <input type="text" id="nome" name="name" class="nome" placeholder="Nome" required>
+                    <input type="text" id="email" name="email" class="email" placeholder="E-mail" required>
+                    <input type="text" name="assunto" id="assunto" class="assunto" placeholder="Assunto" required>
+                    <textarea name="body" id="mensagem" class="mensagem" cols="30" rows="7" placeholder=""  required></textarea>
+                    <input onclick="showSomething()" onclick="onclick=wait(1000)" type="submit" value="Enviar" class="botao botaoMensagem">
+                </form>
+            </div>
+        </section>
+    
+        <script>
+            // Função de espera em mili segundos
+            function wait(ms){
+            var start = new Date().getTime();
+            var end = start;
+            while(end < start + ms) {
+                end = new Date().getTime();
+            }
+            }
+
+            // Alerta ativado pelo botão de Enviar Formulário
+            function showSomething() {
+            alert("Os pequenos magos que moram no computador ainda estão implementando essa parte. Em breve o formulário estará funcionando perfeitamente");        
+            }
+
+        
+            // IMPLEMENTAÇÃO PARA O FORMULÁRIO (aind em desenvolvimento)
+            // type="text/javascript" src="./index.js"
+            // const form = document.getElementById('formularioContato');
+            // form.addEventListener('submit', handleFormSubmit);
+        </script>
+
+    </body>    
+
+    <footer>
+        <p>Já conhecia a gente? Se não conhecia, aproveita que agora nós somos praticamente melhores amigos e segue a gente nas redes:</p>
+        <ul class="iconesRedesFooter">
+            <a href="https://www.instagram.com/iza.dsgn/" target="_blank"><img src="./images/insta.png" id="imginsta"></a>
+            <a href="https://www.linkedin.com/in/iza-machado-491bb5ba/" target="_blank"><img src="./images/linkedIn.png" id="imglinkedIn"></a>
+        </ul>
+        
+    </footer>
+
+</html>
