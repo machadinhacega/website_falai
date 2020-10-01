@@ -6,4 +6,5 @@ Esse foi o desafio final do treinamento Aperte Começar do Coletivo Zero & Umas.
 :sparkles: O resultado foi o site "falaí" que fala sobre a carreira e história de Rebecca Sugar.<br>
 :wrench: Utilizei o Figma para projetar o layout da página e o VS code para escrever os arquivos HTML e CSS.<br>
 <br>
+
 [<img src='https://github.com/machadinhacega/website_falai/blob/develop/images/resultado-botao-repositorio.png' height='40'>](https://machadinhacega.github.io/website_falai)  
