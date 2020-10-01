@@ -53,10 +53,6 @@
                 <p>Em 2019 Rebecca Sugar e o rapper Emicida se encontraram durante a CCXP para uma "Gem Session" exclusiva. Eles cantaram Everything Stays, Passarinhos e Crystal Gems, além de conversarem sobre suas inspirações na música e memórias da infância com muito desenho e família. </p>
                 <a href="https://www.youtube.com/watch?v=UkXNKeR_ONY" target="_blank"> <input type="button" value="Confira o vídeo no youtube" class="botao videoEmicida">
                 </a>
-                <!-- <div>
-                    <a href="https://www.youtube.com/watch?v=UkXNKeR_ONY"><img src="./images/youtube.png" id=imgyoutube></a>
-                    <p>Ver vídeo no youtube</p>
-                </div> -->
             </div>
         </section>
 
@@ -101,14 +97,34 @@
                     <input type="text" id="email" name="email" class="email" placeholder="E-mail" required>
                     <input type="text" name="assunto" id="assunto" class="assunto" placeholder="Assunto" required>
                     <textarea name="body" id="mensagem" class="mensagem" cols="30" rows="7" placeholder=""  required></textarea>
-                    <input type="submit" value="Enviar" class="botao botaoMensagem">
+                    <input onclick="showSomething()" onclick="onclick=wait(1000)" type="submit" value="Enviar" class="botao botaoMensagem">
                 </form>
-                <!-- <div id="espaço"></div> -->
             </div>
         </section>
+    
+        <script>
+            // Função de espera em mili segundos
+            function wait(ms){
+            var start = new Date().getTime();
+            var end = start;
+            while(end < start + ms) {
+                end = new Date().getTime();
+            }
+            }
+
+            // Alerta ativado pelo botão de Enviar Formulário
+            function showSomething() {
+            alert("Os pequenos magos que moram no computador ainda estão implementando essa parte. Em breve o formulário estará funcionando perfeitamente");        
+            }
+
+        
+            // IMPLEMENTAÇÃO PARA O FORMULÁRIO (aind em desenvolvimento)
+            // type="text/javascript" src="./index.js"
+            // const form = document.getElementById('formularioContato');
+            // form.addEventListener('submit', handleFormSubmit);
+        </script>
 
     </body>    
-
 
     <footer>
         <p>Já conhecia a gente? Se não conhecia, aproveita que agora nós somos praticamente melhores amigos e segue a gente nas redes:</p>
@@ -118,6 +134,5 @@
         </ul>
         
     </footer>
-
 
 </html>
